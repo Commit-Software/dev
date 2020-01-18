@@ -13,8 +13,7 @@
   "license": "Apache-2.0",
   "engines": {},
   "publishConfig": {
-    "access": "restricted",
-    "registry": "https://registry.npmjs.org"
+    "access": "restricted"
   },
   "repository": {
     "type": "git",
