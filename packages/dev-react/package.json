@@ -1,6 +1,6 @@
 {
   "name": "@commit-software/dev-react",
-  "version": "0.35.0",
+  "version": "0.35.1",
   "description": "A collection of shared CI scripts and development environment used by @polkadot projects",
   "keywords": [
     "Polkadot"
@@ -33,7 +33,7 @@
     "@babel/core": "^7.7.7",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-react": "^7.7.0",
-    "@commit-software/dev": "^0.35.0",
+    "@commit-software/dev": "^0.35.1",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "@types/react-native": "^0.60.28",
