@@ -1,18 +1,4 @@
 #!/bin/bash
-# Copyright 2017-2020 @polkadot/dev authors & contributors
-# This software may be modified and distributed under the terms
-# of the Apache-2.0 license. See the LICENSE file for details.
-
-# For codeclimate
-#   curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-#   chmod +x ./cc-test-reporter
-#
-# Needs CC_TEST_REPORTER_ID
-#
-#   ./cc-test-reporter before-build
-#   yarn test
-#   ./cc-test-reporter after-build --exit-code 0
-
 set -e
 
 BUMP_VERSION=
@@ -23,7 +9,7 @@ function run_clean () {
   echo ""
   echo "*** Running clean"
 
-  yarn run polkadot-dev-clean-build
+  yarn run dev-clean-build
 
   echo ""
   echo "*** Checks completed"
@@ -44,13 +30,6 @@ function run_test () {
   echo "*** Running tests"
 
   yarn run test
-
-  if [ -f "coverage/lcov.info" ] && [ -n "$COVERALLS_REPO_TOKEN" ]; then
-    echo ""
-    echo "*** Submitting to coveralls.io"
-
-    (cat coverage/lcov.info | yarn run coveralls) || true
-  fi
 
   echo ""
   echo "*** Tests completed"
@@ -84,13 +63,13 @@ function lerna_bump () {
 
   if [[ $TAG == *"beta"* ]]; then
     # if we have a beta version, just continue the stream of betas
-    yarn run polkadot-dev-version-beta
+    yarn run dev-version-beta
   else
     LAST=${TAG##*.}
 
     if [[ $LAST == "0" ]]; then
       # patch is .0, so publish this as an actual release (surely we did out job on beta)
-      yarn run polkadot-dev-version-patch
+      yarn run dev-version-patch
     elif [ -z "$CI_NO_BETA" ]; then
       # non-zero patch version, continue as next beta minor
       yarn run lerna version preminor --preid beta --yes --no-git-tag-version --no-push --allow-branch '*'
@@ -143,10 +122,10 @@ function npm_setup () {
 
 function npm_publish () {
   echo ""
-  echo "*** Copying package files to build"
+  echo "*** Copying package files to lib"
 
-  rm -rf build/package.json
-  cp LICENSE README.md package.json build/
+  rm -rf lib/package.json
+  cp LICENSE README.md package.json lib/
 
   echo ""
   echo "*** Publishing to npm"
@@ -158,7 +137,7 @@ function npm_publish () {
     TAG="--tag beta"
   fi
 
-  cd build
+  cd lib
 
   local n=1
 

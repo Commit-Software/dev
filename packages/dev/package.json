@@ -14,7 +14,11 @@
     "polkadot-dev-version-beta": "./scripts/polkadot-dev-version-beta.sh",
     "polkadot-dev-version-minor": "./scripts/polkadot-dev-version-minor.sh",
     "polkadot-dev-version-patch": "./scripts/polkadot-dev-version-patch.sh",
-    "polkadot-dev-yarn-only": "./scripts/polkadot-dev-yarn-only.js"
+    "polkadot-dev-yarn-only": "./scripts/polkadot-dev-yarn-only.js",
+    "dev-version-beta": "./scripts/polkadot-dev-version-beta.sh",
+    "dev-version-minor": "./scripts/polkadot-dev-version-minor.sh",
+    "dev-version-patch": "./scripts/polkadot-dev-version-patch.sh",
+    "dev-ghact-build": "./scripts/polkadot-dev-ghact-build.sh"
   },
   "keywords": [
     "Polkadot"
@@ -27,7 +31,7 @@
   "license": "Apache-2.0",
   "engines": {},
   "publishConfig": {
-    "access": "public",
+    "access": "restricted",
     "registry": "https://registry.npmjs.org"
   },
   "repository": {
