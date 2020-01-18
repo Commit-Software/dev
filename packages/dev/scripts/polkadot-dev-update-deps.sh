@@ -13,7 +13,7 @@ DIRECTORIES=( $(find . -type d -maxdepth 1 | cut -c 3-) )
 echo ""
 echo "*** Updating inter-package-deps"
 
-$CURRENT/node_modules/@commitsoftware/dev/scripts/polkadot-dev-update-deps.js
+$CURRENT/node_modules/@commit-software/dev/scripts/polkadot-dev-update-deps.js
 
 echo ""
 echo "*** Installing updated packages"

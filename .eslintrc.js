@@ -1,4 +1,4 @@
-const base = require('@commitsoftware/dev-react/config/eslint');
+const base = require('@commit-software/dev-react/config/eslint');
 
 module.exports = {
   ...base,

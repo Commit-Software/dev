@@ -16,7 +16,7 @@ const plugins = [
 ];
 
 if (isTest) {
-  plugins.push('@commitsoftware/dev/config/babel-plugin-fix-istanbul');
+  plugins.push('@commit-software/dev/config/babel-plugin-fix-istanbul');
 }
 
 module.exports = {

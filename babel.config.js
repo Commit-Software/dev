@@ -3,5 +3,5 @@
 // of the Apache-2.0 license. See the LICENSE file for details.
 
 module.exports = {
-  extends: '@commitsoftware/dev-react/config/babel'
+  extends: '@commit-software/dev-react/config/babel'
 };
