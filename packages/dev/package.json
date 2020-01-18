@@ -1,6 +1,6 @@
 {
   "name": "@commit-software/dev",
-  "version": "0.34.1-beta.5",
+  "version": "0.35.0",
   "description": "A collection of shared CI scripts and development environment used by @polkadot projects",
   "bin": {
     "polkadot-dev-build-babel": "./scripts/polkadot-dev-build-babel.sh",
