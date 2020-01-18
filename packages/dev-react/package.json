@@ -1,5 +1,5 @@
 {
-  "name": "@polkadot/dev-react",
+  "name": "commit-software/dev-react",
   "version": "0.32.14",
   "description": "A collection of shared CI scripts and development environment used by @polkadot projects",
   "keywords": [
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/polkadot-js/dev.git"
+    "url": "git+https://github.com/commit-software/dev.git"
   },
   "bugs": {
-    "url": "https://github.com/polkadot-js/dev/issues"
+    "url": "https://github.com/commit-software/dev/issues"
   },
-  "homepage": "https://github.com/polkadot-js/dev#readme",
+  "homepage": "https://github.com/commit-software/dev#readme",
   "browserslist": [
     "last 2 Chrome versions",
     "last 2 Safari versions",
