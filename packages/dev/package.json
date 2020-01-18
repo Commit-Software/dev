@@ -1,5 +1,5 @@
 {
-  "name": "commit-software/dev",
+  "name": "@commitsoftware/dev",
   "version": "0.32.14",
   "description": "A collection of shared CI scripts and development environment used by @polkadot projects",
   "bin": {
