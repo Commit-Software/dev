@@ -3,7 +3,7 @@
 // of the Apache-2.0 license. See the LICENSE file for details.
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const base = require('@polkadot/dev/config/eslint');
+const base = require('@commitsoftware/dev/config/eslint');
 
 // we are doing some magic here - with eslint 5.x we would simply do
 //   extends: ['@polkadot/dev/config/eslint', 'plugin:react/recommended']

@@ -1,4 +1,4 @@
-const base = require('@polkadot/dev-react/config/eslint');
+const base = require('@commitsoftware/dev-react/config/eslint');
 
 module.exports = {
   ...base,
